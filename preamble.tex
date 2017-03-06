@@ -1,0 +1,47 @@
+\DeclareMathOperator*{\argmax}{arg\,max}
+\usecolortheme{whale}
+\useinnertheme[shadow]{rounded}
+\usenavigationsymbolstemplate{}
+\usepackage[subsection=false,headline=empty,footline=outlineauthortitle]{beamerouterthememiniframesbottom}
+%\usepackage{beamerthemesplit}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows,automata,positioning,shapes,shapes.geometric,fit,tikzmark,calc}
+\usefonttheme[onlymath]{serif}
+\usepackage{bm}
+\usepackage{enumitem}
+
+\usepackage{textcomp}
+% Set up citation style
+\usepackage{natbib}
+\usepackage{bibentry}
+\bibpunct{(}{)}{;}{a}{,}{,}
+\newcommand{\newcite}[1]{\citet{#1}}
+\renewcommand{\cite}[1]{\citep{#1}}
+
+%\setbeamercovered{transparent}
+
+% Specify that no bibliography should be printed
+\bibliographystyle{plainnat}
+
+
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\usepackage{pgfpages}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\setlist[itemize,1]{label={\fontfamily{cmr}\fontencoding{T1}\selectfont\textbullet}}
+
+\usepackage{mathtools}
+
+\newcommand\defeq{\stackrel{\mathclap{\normalfont\mbox{\tiny def}}}{=}}
+\newcommand{\Lim}[1]{\raisebox{0.5ex}{\scalebox{0.8}{$\displaystyle \lim_{#1}\;$}}}
+
